@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Librería de confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="Carta.CSS">
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Texto encima del sobre -->
+        <div class="top-envelope-text" id="topEnvelopeText">
+            💌 Una carta muy especial para ti 💌
+        </div>
+
+        <!-- SOBRE -->
+        <div class="envelope-container" id="envelopeContainer">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                
+                <!-- Sello de Cera Estilizado con Corazón Grabado -->
+                <div class="wax-seal">
+                    <span class="seal-icon">✦</span>
+                </div>
+                
+                <!-- Sello postal decorativo -->
+                <div class="envelope-stamp">BIRTHDAY MAIL ✈</div>
+
+                <!-- Datos en la esquina inferior izquierda -->
+                <div class="envelope-info">
+                    <span class="to-label">Para:</span>
+                    <span class="recipient-name">Jose David</span>
+                    <span class="sender-name">De: El amor de tu vida. J</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARTA -->
+        <div class="letter-card" id="letterCard">
+            <div class="letter-content">
+                <!-- Encabezado superior de la carta -->
+                <div class="letter-header">
+                    <h3 class="letter-recipient">Para: Jose David T.L</h3>
+                    <span class="letter-date">11 de Octubre de 2026</span>
+                </div>
+                
+                <div class="badge-cumple">✨ ¡Feliz Cumpleaños! ✨</div>
+                <h2>FELIZ CUMPLEAÑOS MI AMOOOR 🎉</h2>
+                
+                <p>Mi niño bonito... <br>
+<br>
+Hoy es un día muy especial para ti, y como lo es para ti, lo es para mi también. Hoy hace 19 años nació el hombre que mas adelante se convertiría en el amor de mi vida. No sabes lo feliz que me haces y por eso quiero que esa felicidad se vea reflejada en este día tan importante y especial. <br>
+<br>
+Perdóname por no hacerlo diferente, mas bonito o algo así, pero te prometo que di todo de mi para que este día sea único, tal vez no estará al nivel del año pasado pero espero la pases muy bien y feliz a mi lado. <br>
+<br>
+Feliz cumpleaños amor mío, espero sigas cumpliendo muchísimos años mas, también espero estar contigo siempre, seguir viéndote crecer, salir adelante y cumplir todo aquello que te propongas. Sin importar que pase en un futuro recuerda que siempre estaré para ti cuando me necesites. <br>
+<br>
+Te amo mucho mi vida, nunca lo olvides. <br>
+                   
+                                                                                                                                                                         J♡</p>
+                
+                <!-- PASTEL DIDÁCTICO CON DESEOS -->
+                <div class="cake-box" id="cakeBox">
+                    <p class="cake-instruction" id="cakeInstruction">🎂 Toca el pastel para pedir un deseo y soplar las velitas</p>
+                    <div class="cake">
+                        <div class="candles-container">
+                            <div class="candle">
+                                <div class="flame">🔥</div>
+                                <div class="wick"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="flame">🔥</div>
+                                <div class="wick"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="flame">🔥</div>
+                                <div class="wick"></div>
+                            </div>
+                        </div>
+                        <div class="cake-layer layer-top"></div>
+                        <div class="layer-middle"></div>
+                        <div class="layer-bottom"></div>
+                    </div>
+                    <p id="cakeMessage" class="cake-message">¡Sopla las velitas!</p>
+                </div>
+
+                <!-- SECCIÓN DE BOTONES -->
+                <div class="interactive-section">
+                    <div class="buttons-group">
+                        <button class="btn btn-gift" id="btnGift">✨ Abrir Sorpresa</button>
+                    </div>
+                </div>
+
+                <button class="btn-close" id="btnCloseLetter">✉ Guardar en el sobre</button>
+            </div>
+        </div>
+    </div>
+
+<!-- MODAL SORPRESA (MINECRAFT EDITION) -->
+    <div class="modal" id="giftModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <h3>🏆 ¡LOGRO DESBLOQUEADO! 🏆</h3>
+            <p><strong>"Un año más en el servidor de la vida"</strong></p>
+            <p>¡Has abierto un cofre especial! Gracias por ser un jugador increíble en mi mundo. ¡Que sigas construyendo momentos épicos!</p>
+            <div class="gift-icon">🧰💎⚔️</div>
+        </div>
+    </div>
+    
+    <script src="Carta.JS"></script>
+</body>
+</html>
